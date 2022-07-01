@@ -9,19 +9,18 @@
     background-size: cover;
     background-position: center;
 
-    max-width: 1600px;
-    height: 600px;
+    width: 480px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
-    padding: 200px 0;
+    padding: 118px 0;
 
     &__title {
         color: var(--light-txt-cl-white);
 
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
         letter-spacing: 0.06em;
+        font-size: 42/26;
         text-transform: uppercase;
 
         margin-bottom: 30px;
@@ -30,6 +29,33 @@
     }
 }
 
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        width: 768px;
+        height: 400px;
+        &__title {
+            font-size: 26px;
+            line-height: 42/26;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        width: 1600px;
+        height: 600px;
+
+        padding: 200px 0;
+
+        &__title {
+            font-size: 44px;
+            line-height: 1.36;
+        }
+    }
 
 @keyframes swing {
     0% {
@@ -83,10 +109,7 @@
     96% {
         transform: rotate(0deg);
     }
-
-
 }
-    
 
 @keyframes swing-stop {
     0% {
@@ -224,4 +247,4 @@
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45),
             0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
     }
-}
+}}

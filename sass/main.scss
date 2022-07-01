@@ -7,23 +7,36 @@
 // Логотип
 @import "../sass/components/logo";
 // общии классы
-@import "../sass/utils/general";
+@import "../sass//base/general";
+
+// -----------------------------------------------------------------------
 // шапка ссайта
-@import "../sass/components/header";
+@import "../sass/layout/header";
 // в шапке навигация
 @import "../sass/components/site-nav";
 // в шапке контакты
 @import "../sass/components/auth-nav";
+
+// --------------------------------------------------------------------------
 // Герой
-@import "../sass/components/hero";
+@import "../sass/layout/hero";
 //Кнопка
 @import "../sass/components/button";
+
+
+// ---------------------------------------------------------------------
 // приемущество на индексе
-@import "../sass/components/advantage";
+@import "../sass//layout/advantage";
+
+// ---------------------------------------------------------------------
 // занятия на индексе
-@import "../sass/components/occupation";
+@import "../sass/layout/occupation";
+
+// ---------------------------------------------------------------------
 // команда на индексе
-@import "../sass/components/team";
+@import "../sass/layout/team";
+
+// -----------------------------------------------------------
 // карточки на индексе
 @import "../sass/components/card";
 // иконки на индексе
@@ -52,10 +65,6 @@
 @import "../sass/components/contaent-box";
 // верхнее часть карточки в портфолео
 @import "../sass/components/cards-information";
-body {
-    
-}
-
 
 
 

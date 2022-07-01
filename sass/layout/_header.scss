@@ -1,0 +1,39 @@
+// шапка сайта
+
+
+@media screen and (min-width: 480px) {
+    .header__mob-nav-icon {
+        outline: 1px solid tomato;
+    }
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        border-bottom: 1px solid var(--cl-border);
+    }
+    .header__container {
+        display: flex;
+        align-items: center;
+    }
+    .header__mob-nav-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        border-bottom: 1px solid var(--cl-border);
+    }
+    .header__container {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__mob-nav-icon {
+        display: none;
+    }
+}

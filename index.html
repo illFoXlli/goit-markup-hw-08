@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="wight=divice-width, initial-scale=1.0 "/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -23,12 +22,13 @@
   </head>
   <body class="body">
     <!--Шапка сайта-->
-    <header class="header">
-      <!-- Логотип -->
+    <!-- <header class="header">
+     
       <div class="container header__container">
         <a class="logo" href="./index.html"> Web<span class="logo--black">Studio</span> </a>
         <nav class="main-nav">
-          <!--Навигация сайта-->
+            <svg class="header__mob-nav-icon" width="40" height="40"><use href="./images/icons.svg#icon-nav-menu-icon"></use></svg>
+         
           <ul class="site-nav site-nav--indent-left list">
             <li class="site-nav__item">
               <a class="site-nav__link site-nav__link--current" href="./index.html" title="Студия">Студия</a>
@@ -41,8 +41,8 @@
             </li>
           </ul>
         </nav>
-        <!--Контакты по сайту-->
-        <ul class="auth-nav auth-nav--indent list">
+       
+       <ul class="auth-nav auth-nav--indent list"> 
           <li class="auth-nav__item">
             <a href="mailto:info@devstudio.com" class="auth-nav__link">
               <svg width="16" height="12" class="auth-nav__envelope">
@@ -59,7 +59,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!-- уникальный контент -->
     <main class="main">
       <!-- секция Герой  -->
@@ -70,8 +70,9 @@
         </h1>
         <button type="button" class="button button__hero" data-modal-open>Заказать услугу</button>
       </section>
+      <div class="container"></div>
       <!--Приемущество-->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container section__container">
           <h2 class="visually-hidden">Приемущество</h2>
           <ul class="advantage list">
@@ -113,9 +114,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Род занятий -->
-      <section class="occupation section">
+        <!-- <section class="occupation section"
         <div class="container">
           <h2 class="occupation__titel">Чем мы занимаемся</h2>
           <ul class="occupation__list list">
@@ -133,15 +134,15 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Команда-->
       <section class="section section--cl">
         <div class="container team">
           <h2 class="team__titel">Наша команда</h2>
-          <!--#1 команды-->
+         
           <ul class="team__list list">
             <li class="team__card">
-              <img class="team--no-line" src="./images/team1.jpg" alt="Фото" width="270" height="260" />
+              <img class="team--no-line team__img" src="./images/team1.jpg" alt="Фото" width="270" height="260" />
 
               <div class="card">
                 <h3 class="card__people">Игорь Демьяненко</h3>
@@ -178,9 +179,9 @@
                 </ul>
               </div>
             </li>
-            <!--#2 команды-->
+            
             <li class="team__card">
-              <img class="team--no-line" src="./images/team2.jpg" alt="Фото" width="270" height="260" />
+              <img class="team--no-line team__img" src="./images/team2.jpg" alt="Фото" width="270" height="260" />
               <div class="card">
                 <h3 class="card__people">Ольга Репина</h3>
                 <p class="card__work">Frontend Developer</p>
@@ -216,9 +217,9 @@
                 </ul>
               </div>
             </li>
-            <!--#3 команды-->
+        
             <li class="team__card">
-              <img class="team--no-line" src="./images/team3.jpg" alt="Фото" width="270" height="260" />
+              <img class="team--no-line team__img" src="./images/team3.jpg" alt="Фото" width="270" height="260" />
               <div class="card">
                 <h3 class="card__people">Николай Тарасов</h3>
                 <p class="card__work">Marketing</p>
@@ -254,9 +255,9 @@
                 </ul>
               </div>
             </li>
-            <!--#4 команды-->
+           
             <li class="team__card">
-              <img class="team--no-line" src="./images/team4.jpg" alt="фото" width="270" height="260" />
+              <img class="team--no-line team__img" src="./images/team4.jpg" alt="фото" width="270" height="260" />
               <div class="card">
                 <h3 class="card__people">Михаил Ермаков</h3>
                 <p class="card__work">UI Designer</p>
@@ -294,10 +295,10 @@
             </li>
           </ul>
         </div>
-        <!--Постоянные клиенты-->
+        
       </section>
-      <!-- портнеры -->
-      <section class="section partners">
+   <!--Постоянные клиенты-->
+      <!-- <section class="section partners">
         <div class="container ">
           <h2 class="partners__title">Постоянные клиенты</h2>
           <ul class="partners__grid list">
@@ -350,11 +351,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- подвал, низ страницы -->
-    <footer class="footer">
-      <!-- Контакты -->
+    <!-- <footer class="footer">
+     
       <div class="container footer__container">
         <div class="address">
           <a href="./index.html" class="logo logo--properties">Web<span class="logo__cl-white">Studio</span> </a>
@@ -428,9 +429,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Модальное окно -->
-    <div class="backdrop backdrop__is-hidden" data-modal>
+    <!-- <div class="backdrop backdrop__is-hidden" data-modal>
       <div class="modal">
         <strong class="modal__title">Оставьте свои данные, мы вам перезвоним</strong>
         <button class="modal__button-close" data-modal-close>
@@ -477,7 +478,6 @@
             </li>
           </ul>
           <div class="form-modal__grup">
-            <!-- галачка -->
 
             <label class="checkbox" name="agreement">
               <input class="checkbox__input visually-hidden" type="checkbox" name="agreement" required />
@@ -499,7 +499,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/mobal.js"></script>
   </body>
 </html>

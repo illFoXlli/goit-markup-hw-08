@@ -1,8 +1,27 @@
 // занятия на индексе
-.occupation {
-    padding-top: 0;
 
-    &__titel {
+.occupation {
+        display: none;
+    }
+    
+@media screen and (min-width: 480px) {
+    .occupation {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .occupation {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .occupation {
+        display: block;
+        padding-top: 0;
+    }
+    .occupation__titel {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -11,23 +30,23 @@
         margin-bottom: 50px;
     }
 
-    &__list {
+    .occupation__list {
         display: flex;
         gap: 30px;
         padding-left: 0;
     }
-    &__item {
+    .occupation__item {
         position: relative;
 
         background-color: var(--button-text-color);
         background-size: cover;
     }
 
-    &__img {
+    .occupation__img {
         display: block;
     }
 
-    &__text-card {
+    .occupation__text-card {
         position: absolute;
         bottom: 0;
         left: 0;

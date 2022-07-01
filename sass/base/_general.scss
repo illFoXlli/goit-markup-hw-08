@@ -1,0 +1,59 @@
+// общии классы
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 480px;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section--cl {
+  background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .container {
+    min-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
