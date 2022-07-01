@@ -1,0 +1,28 @@
+.body {
+  color: var(--main-txt-cl);
+
+  font-style: normal;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+ul {
+  padding: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}

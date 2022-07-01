@@ -1,0 +1,61 @@
+/* форма в футоре */
+
+.form-footer {
+    margin-left: auto;
+    margin-top: 12px;
+
+    &__titel {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+
+        color: var(--light-txt-cl-white);
+    }
+
+    &__position {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input:focus-visible {
+        outline: var(--main-bg-cl) auto 1px;
+    }
+
+    &__input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 358px;
+        padding: 15px 16px;
+        border-radius: 4px;
+        border: 1px solid #6e6e75;
+        color: #ffffff;
+        background-color: var(--bg-footer-cl);
+
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+
+        transition-property: outline;
+        transition-duration: var(--time-hov-foc);
+        transition-timing-function: var(--time-cubic);
+    }
+
+    &__input::placeholder {
+        color: #acacb0;
+
+    }
+  
+    &__button-svg {
+        margin-left: 10px;
+        fill: #ffffff;
+    }
+
+
+}

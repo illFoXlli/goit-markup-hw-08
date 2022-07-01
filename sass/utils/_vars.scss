@@ -1,0 +1,49 @@
+ /*----------------------- Fonts ---------------------------------*/
+ :root {
+ 
+ --main-font: 'Roboto',
+     sans-serif;
+ --secondary-font: 'Raleway',
+     sans-serif;
+ /*----------------------- Tetx colors ---------------------------*/
+
+ --main-txt-cl: #212121;
+ --main-txt-cl-foc: #2196f3;
+ --secondary-txt-cl: #757575;
+ --light-txt-cl-white: #ffffff;
+ --address__link-text-cl: rgba(255, 255, 255, 0.6);
+ --button-text-color: #f5f4fa;
+
+ /* ------------------------Background colors ---------------------*/
+
+ --main-bg-cl: #2196f3;
+ --secondary-bg-cl: #ffffff;
+ --hiro-bg-cl: #c4c4c4;
+ --btn-bg-cl-hiro: #188ce8;
+ --bg-footer-soc-link: #afb1b8;
+ --bg-footer-soc: rgba(255, 255, 255, 0.1);
+ --bg-card-link-svg: #afb1b8;
+ --bg-soc-logo-link: #f5f4fa;
+ --bg-footer-cl: #2f303a;
+ --bg-occupation-card: rgba(47, 48, 58, 0.8);
+ --bg-form-cl: #757575;
+ /* checkbox-icon-color */
+ --bg-checkbox-icon-black: #212121;
+ --bg-checkbox-icon-white: #ffffff;
+ --bg-checkbox-icon-blue: #2196f3;
+
+ /*--------------------- Other visuals vars------------- */
+ --logo-cl-blakc: #000000;
+ --logo-cl-white: #ffffff;
+ --logo-cl-secondary: #2196f3;
+ --cl-border: #ececec;
+ --bg-cards-information-box: rgba(33, 150, 243, 0.9);
+ --input-border-cl: #d3d3d3;
+
+ --time-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+ --time-hov-foc: 250ms;
+ --outline-foc: none;
+
+ --items: 3;
+ --indent: 30px;
+ }

@@ -1,0 +1,62 @@
+// переменные
+@import "../sass/utils/vars";
+// нормолайз
+@import "../sass/base/normalize";
+// базавые утелиты
+@import "../sass/base/base";
+// Логотип
+@import "../sass/components/logo";
+// общии классы
+@import "../sass/utils/general";
+// шапка ссайта
+@import "../sass/components/header";
+// в шапке навигация
+@import "../sass/components/site-nav";
+// в шапке контакты
+@import "../sass/components/auth-nav";
+// Герой
+@import "../sass/components/hero";
+//Кнопка
+@import "../sass/components/button";
+// приемущество на индексе
+@import "../sass/components/advantage";
+// занятия на индексе
+@import "../sass/components/occupation";
+// команда на индексе
+@import "../sass/components/team";
+// карточки на индексе
+@import "../sass/components/card";
+// иконки на индексе
+@import "../sass/components/icon";
+// Портнеры
+@import "../sass/components/partners"; 
+// Футер
+@import "../sass/components/footer";
+// адресс в футоре
+@import "../sass/components/address";
+// форма в футоре
+@import "../sass/components/form-footer";
+// Бэк дроп
+@import "../sass/components/backdrop";
+// модальное окно
+@import "../sass/components//modal";
+// форма
+@import "../sass/components/form-modal";
+// checkbox галочка в форме
+@import "../sass/components/checkbox";
+// сетка и кнопка для портфолео
+@import "../sass/components/filter-button";
+// контейнет для карточек
+@import "../sass/components/contaent-cards";
+// коробочка для информации в контейрере для портфолио. Нижняя часть карточки
+@import "../sass/components/contaent-box";
+// верхнее часть карточки в портфолео
+@import "../sass/components/cards-information";
+body {
+    
+}
+
+
+
+
+

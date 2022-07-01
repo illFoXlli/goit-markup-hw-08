@@ -1,0 +1,28 @@
+
+// Логотип
+.logo {
+    color: var(--logo-cl-secondary);
+
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    text-decoration: none;
+
+    &--black {
+        color: var(--logo-cl-blakc);
+    }
+
+    &:focus {
+        outline-color: var(--main-bg-cl);
+    }
+    &__cl-white {
+        color: var(--logo-cl-white);
+    }
+
+    &--properties {
+        display: block;
+        margin-bottom: 20px;
+    }
+}

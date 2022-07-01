@@ -1,0 +1,73 @@
+// адресс в футоре
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    font-style: normal;
+    color: var(--light-txt-cl-white);
+    text-decoration: none;
+    outline: none;
+
+    transition-property: color;
+    transition-duration: var(--time-hov-foc);
+    transition-timing-function: var(--time-cubic);
+}
+
+.address__link:focus,
+.address__link:hover {
+    color: var(--main-bg-cl);
+}
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    font-style: normal;
+    color: var(--light-txt-cl-white);
+    text-decoration: none;
+    outline: none;
+
+    transition-property: color;
+    transition-duration: var(--time-hov-foc);
+    transition-timing-function: var(--time-cubic);
+}
+
+.address__link:focus,
+.address__link:hover {
+    color: var(--main-bg-cl);
+}
+
+.address__link-contact {
+    color: rgba(255, 255, 255, 0.6);
+
+    text-decoration: none;
+    line-height: 1.71;
+
+    display: block;
+}
+.address__link-contact + .address__link-contact {
+    display: block;
+    margin-bottom: 9px;
+}
+.address__link-contact:hover {
+    color: var(--main-bg-cl);
+}
+
+.address__link-contact {
+    font-style: normal;
+    color: var(--address__link-text-cl);
+    outline: none;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: var(--time-hov-foc);
+    transition-timing-function: var(--time-cubic);
+}
+
+.address__link-contact:hover,
+.address__link-contact:focus {
+    color: var(--main-bg-cl);
+    outline: vap(--outline-foc);
+}

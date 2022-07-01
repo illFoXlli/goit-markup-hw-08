@@ -1,0 +1,9 @@
+// шапка сайта
+.header {
+    border-bottom: 1px solid var(--cl-border);
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+}

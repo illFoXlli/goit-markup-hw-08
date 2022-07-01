@@ -1,0 +1,57 @@
+// checkbox галочка в форме
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.checkbox__input:focus-visible ~ .checkbox__position > .checkbox__icon {
+  --color3: var(--bg-checkbox-icon-blue);
+}
+
+.checkbox__input:focus-visible {
+  outline-color: var(--main-bg-cl);
+}
+
+.checkbox__position {
+  position: relative;
+}
+
+.checkbox__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, -50%);
+  --color1: var(--bg-checkbox-icon-white);
+  --color2: var(--bg-checkbox-icon-white);
+  --color3: var(--bg-checkbox-icon-black);
+}
+
+.checkbox__icon:focus {
+  --color1: var(--bg-checkbox-icon-white);
+  --color2: var(--bg-checkbox-icon-white);
+  --color3: var(--bg-checkbox-icon-black);
+}
+
+.checkbox__input:checked ~ .checkbox__position > .checkbox__icon {
+  --color1: var(--bg-checkbox-icon-blue);
+  --color2: var(--bg-checkbox-icon-white);
+  --color3: var(--bg-checkbox-icon-blue);
+}
+
+.checkbox__input:focus ~ .checkbox__position > .checkbox__icon {
+  --color3: var(--bg-checkbox-icon-blue);
+}
+
+.checkbox__text {
+  color: var(--bg-form-cl);
+  margin-left: 8px;
+}
+
+.checkbox__link-text {
+  color: var(--main-bg-cl);
+  text-decoration-line: underline;
+}

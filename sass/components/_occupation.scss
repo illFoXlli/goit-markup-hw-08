@@ -1,0 +1,47 @@
+// занятия на индексе
+.occupation {
+    padding-top: 0;
+
+    &__titel {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        padding-left: 0;
+    }
+    &__item {
+        position: relative;
+
+        background-color: var(--button-text-color);
+        background-size: cover;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__text-card {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        font-weight: 700;
+        line-height: 0.88;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: var(--light-txt-cl-white);
+        background-color: var(--bg-occupation-card);
+
+        padding-top: 27px;
+        padding-bottom: 27px;
+        width: 100%;
+    }
+}

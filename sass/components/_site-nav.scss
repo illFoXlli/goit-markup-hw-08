@@ -1,0 +1,64 @@
+// в шапке контакты
+
+.site-nav {
+    display: flex;
+
+    &__item {
+        position: relative;
+    }
+    &__link {
+        color: var(--main-txt-cl);
+
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        transition-property: color;
+        transition-duration: var(--time-hov-foc);
+        transition-timing-function: var(--time-cubic);
+    }
+
+    &__link--current,
+    &__link:hover,
+    &__link:focus,
+    &__item:hover,
+    &__item:focus {
+        color: var(--main-txt-cl-foc);
+        outline: var(--outline-foc);
+    }
+
+    &__link--current::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 4px;
+        background-color: var(--main-bg-cl);
+
+        border-radius: 2px;
+    }
+
+    &--indent-left {
+        margin-left: 93px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    &__item {
+        gap: 50px;
+    }
+}

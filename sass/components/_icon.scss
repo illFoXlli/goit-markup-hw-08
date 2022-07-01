@@ -1,0 +1,58 @@
+// иконки на индексе
+.icon {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+.icon__element {
+    display: flex;
+    width: 44px;
+    height: 44px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: var(--time-hov-foc);
+    transition-timing-function: var(--time-hov-foc);
+}
+
+.icon__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: var(--time-hov-foc);
+    transition-timing-function: var(--time-cubic);
+
+    &:focus,
+    &:hover {
+        background-color: var(--main-bg-cl);
+        outline-color: var(--secondary-bg-cl);
+    }
+}
+
+.icon__svg {
+    fill: var(--bg-card-link-svg);
+
+    transition-property: fill;
+    transition-duration: var(--time-hov-foc);
+    transition-timing-function: var(--time-cubic);
+
+    .icon__link:hover &,
+    .icon__link:focus & {
+        fill: var(--secondary-bg-cl);
+    }
+}

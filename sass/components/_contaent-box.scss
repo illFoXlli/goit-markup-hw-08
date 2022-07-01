@@ -1,0 +1,27 @@
+// коробочка для информации в контейрере для портфолио
+.contaent-box {
+    display: block;
+    max-width: 368px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px 24px;
+    outline: 1px solid var(--cl-border);
+
+    &__titel {
+        font-family: var(--main-font);
+        font-size: 18px;
+        line-height: 2;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+
+        margin-bottom: 4px;
+    }
+    &__contents {
+        color: var(--secondary-txt-cl);
+
+        font-family: var(--main-font);
+        font-size: 16px;
+        line-height: 1.88;
+    }
+}

@@ -1,0 +1,50 @@
+// Портнеры индекс
+
+.partners__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.partners__grid {
+    display: flex;
+    gap: 30px;
+}
+
+.partners__link:focus {
+    outline: var(--outline-foc);
+    border: 1px solid var(--main-bg-cl);
+}
+.partners__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+
+    border-radius: 4px;
+    border: 1px solid var(--bg-footer-soc-link);
+
+    transition: border-color var(--time-hov-foc) var(--time-cubic);
+
+&:focus .partners__svg {
+    fill: var(--main-bg-cl);
+}
+
+&:hover {
+    border: 1px solid var(--main-bg-cl);
+}
+&:hover .partners__svg {
+    fill: var(--main-bg-cl);
+}
+}
+
+.partners__svg {
+    fill: var(--bg-footer-soc-link);
+
+    transition: fill var(--time-hov-foc) var(--time-cubic);
+}

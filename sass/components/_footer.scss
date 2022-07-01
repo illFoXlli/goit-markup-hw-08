@@ -1,0 +1,59 @@
+// футер
+.footer {
+  padding: 60px 0px;
+  background-color: var(--bg-footer-cl);
+
+  &__container {
+    display: flex;
+  }
+
+  &__icon-titel {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--light-txt-cl-white);
+  }
+  &__icon-footer {
+    margin-left: 70px;
+    margin-top: 12px;
+  }
+
+  /* соц сети в футоре */
+  &__icon-link {
+    display: flex;
+    gap: 10px;
+
+    width: 44px;
+    height: 44px;
+    background-color: var(--bg-footer-soc);
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: background var(--time-hov-foc) var(--time-cubic);
+  }
+  
+  &__icon-list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__icon-svg {
+    fill: var(--light-txt-cl-white);
+  }
+
+  &__icon-link:hover {
+    background: var(--main-bg-cl);
+  }
+
+  &__icon-link:focus {
+    background: var(--main-bg-cl);
+    outline: var(--outline-foc);
+  }
+
+}
