@@ -10,7 +10,8 @@
     background-position: center;
 
     max-width: 480px;
-    
+    height: 400px;
+
     margin-left: auto;
     margin-right: auto;
     padding: 118px 0;
@@ -27,26 +28,18 @@
         animation: text-flicker-in-glow 3000ms;
         animation-fill-mode: forwards;
     }
-}
-// @media screen and (min-width: 480px) {
-//     .hero {
-//         max-width: 480px;
-//     }
-// }
-@media screen and (min-width: 900px) {
-    .hero {
+
+    @media screen and (min-width: 768px) {
         max-width: 768px;
-        height: 400px;
+        
         text-align: center;
         &__title {
             font-size: 26px;
             line-height: 42/26;
         }
     }
-}
 
-@media screen and (min-width: 1200px) {
-    .hero {
+    @media screen and (min-width: 1200px) {
         max-width: 1600px;
         height: 600px;
 

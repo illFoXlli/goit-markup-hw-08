@@ -9,10 +9,14 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  
 
   &--cl {
     background-color: #f5f4fa;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -21,26 +25,12 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  
-}
-@media screen and (min-width: 480px) {
-  .section {
-    width: 100vw;
-  }
-}
-@media screen and (min-width: 900px) {
-  .container {
+
+  @media screen and (min-width: 768px) {
     max-width: 768px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
+  @media screen and (min-width: 1200px) {
     max-width: 1200px;
-  }
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 

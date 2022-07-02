@@ -1,88 +1,82 @@
 // приемущество на индексе
-
- .advantage__item {
-       max-width: 450px;
-       margin-left: auto;
-       margin-right: auto;
-    }
-.advantage__item:not(:last-child) {
-    margin-bottom: 30px;
-}
-.advantage__title {
-    font-size: inherit;
-    font-weight: 700;
-    line-height: 16/14;
-    text-transform: uppercase;
-    text-align: center;
-
-    margin-bottom: 10px;
-}
-
-.advantage__text {
-    color: var(--secondary-txt-cl);
-    line-height: 24/14;
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.advantage__svg-box {
-    display: flex;
-    max-width: 450px;
-    height: 120px;
-    margin-bottom: 30px;
-   
-
-    border-radius: 4px;
-
-    background-color: var(--bg-soc-logo-link);
-
-    justify-content: center;
-    align-items: center;
-}
-
-
-@media screen and (min-width: 900px) {
-    .advantage {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+.advantage {
+    &__item {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .advantage .advantage__item {
-        flex-basis: 354px;
-        margin-bottom: 0;
-        // 354
-    }
-
-    .advantage__svg-box {
-        max-width: 354px;
-        height: 120px;
-    }
-
-    .advantage__title {
-        text-align: left;
+    &__title {
+        font-size: inherit;
+        font-weight: 700;
+        line-height: 16/14;
+        text-transform: uppercase;
+        text-align: center;
 
         margin-bottom: 10px;
     }
-    .advantage__item {
-        margin-bottom: 0;
-        text-align: left;
+
+    &__text {
+        color: var(--secondary-txt-cl);
+        line-height: 24/14;
+        letter-spacing: 0.03em;
+
+        color: #757575;
     }
-}
 
-@media screen and (min-width: 1200px ){
-    .advantage {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 30px;
-}
-.advantage__svg-box {
+    &__svg-box {
+        display: flex;
+        max-width: 450px;
+        height: 120px;
+        margin-bottom: 30px;
 
-    width: 270px;
-    height: 120px;
- 
-}
+        border-radius: 4px;
 
+        background-color: var(--bg-soc-logo-link);
 
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        &__svg-box {
+            max-width: 354px;
+            height: 120px;
+        }
+
+        &__title {
+            text-align: left;
+
+            margin-bottom: 10px;
+        }
+        &__item {
+            max-width: 354px;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        &__item--bottom {
+            flex-basis: 354px;
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+
+        &__svg-box {
+            width: 270px;
+            height: 120px;
+        }
+    }
 }
