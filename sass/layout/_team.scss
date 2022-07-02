@@ -1,5 +1,8 @@
 // команда на индексе
-
+.team {
+  margin-left: auto;
+  margin-right: auto;
+}
 .team__titel {
   font-weight: 700;
   font-size: 36px;
@@ -21,8 +24,9 @@
   display: block;
 }
 .team__img {
-  width: 450px;
-  height: 460px;
+  width: 354px;
+    height: 374px;
+  margin: auto;
 }
 .team__card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -30,20 +34,29 @@
   text-align: center;
   background-color: #ffffff;
 
-  width: 450px;
+  width:354px;
+  
   margin-left: auto;
   margin-right: auto;
 }
 .team__card:not(:last-child) {
   margin-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
+
+@media screen and (min-width: 450px) {
+  .team__img {
+  width: 450px;
+    height: 460px;
+ 
+}
+.team__card {
+   width:450px;
+}
 }
 
-@media screen and (min-width: 768px) {
- 
-
+@media screen and (min-width: 900px) {
   .team__img {
+    object-fit: cover;
     width: 354px;
     height: 374px;
   }
@@ -60,14 +73,14 @@
 }
 
 @media screen and (min-width: 1200px) {
-   .team__titel {
-  margin-bottom: 50px;
-}
+  .team__titel {
+    margin-bottom: 50px;
+  }
   .team__img {
     width: 270px;
     height: 260px;
   }
-   .team .team__card {
+  .team .team__card {
     margin: 0;
     width: 270px;
   }

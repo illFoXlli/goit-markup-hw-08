@@ -9,6 +9,10 @@
 // общии классы
 @import "../sass//base/general";
 
+@import "../sass/utils/breakpoints";
+    
+
+
 // -----------------------------------------------------------------------
 // шапка ссайта
 @import "../sass/layout/header";
@@ -41,10 +45,14 @@
 @import "../sass/components/card";
 // иконки на индексе
 @import "../sass/components/icon";
+
+// ------------------------------------------
 // Портнеры
-@import "../sass/components/partners"; 
+@import "../sass/layout/partners"; 
+
+// -----------------------------------------
 // Футер
-@import "../sass/components/footer";
+@import "../sass/layout/footer";
 // адресс в футоре
 @import "../sass/components/address";
 // форма в футоре

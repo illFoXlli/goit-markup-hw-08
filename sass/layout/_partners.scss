@@ -1,21 +1,24 @@
 // Портнеры индекс
 
-.partners {
-    
-}
-__title {
+
+.partners__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 33/28;
     text-align: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .partners__grid {
-    display: flex;
-    gap: 30px;
+display: flex;
+flex-wrap: wrap;
+ gap: 30px;
+ margin-left: auto;
+ margin-right: auto;
+ justify-content: center;
 }
+
 
 .partners__link:focus {
     outline: var(--outline-foc);
@@ -26,7 +29,7 @@ __title {
     justify-content: center;
     align-items: center;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     border-radius: 4px;
@@ -50,4 +53,25 @@ __title {
     fill: var(--bg-footer-soc-link);
 
     transition: fill var(--time-hov-foc) var(--time-cubic);
+
+
+}
+
+.partners__item {
+    flex-basis: 240px;
+}
+
+@media screen and (min-width: 1200px) {
+ .partners__link {
+   
+   width: 170px;
+   height: 92px;
+}
+
+.partners__title {
+
+ font-size: 36px;
+line-height: 42/36;
+  
+}
 }

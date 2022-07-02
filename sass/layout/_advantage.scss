@@ -1,5 +1,10 @@
 // приемущество на индексе
 
+ .advantage__item {
+       max-width: 450px;
+       margin-left: auto;
+       margin-right: auto;
+    }
 .advantage__item:not(:last-child) {
     margin-bottom: 30px;
 }
@@ -23,9 +28,10 @@
 
 .advantage__svg-box {
     display: flex;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     margin-bottom: 30px;
+   
 
     border-radius: 4px;
 
@@ -34,10 +40,9 @@
     justify-content: center;
     align-items: center;
 }
-@media screen and (min-width: 480px) {
-}
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 900px) {
     .advantage {
         display: flex;
         flex-wrap: wrap;
@@ -51,7 +56,7 @@
     }
 
     .advantage__svg-box {
-        width: 354px;
+        max-width: 354px;
         height: 120px;
     }
 
@@ -66,16 +71,18 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px ){
     .advantage {
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
 }
-
-
 .advantage__svg-box {
+
     width: 270px;
+    height: 120px;
+ 
 }
+
 
 }
