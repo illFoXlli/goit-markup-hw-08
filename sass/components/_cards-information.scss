@@ -7,8 +7,8 @@
 .cards-information__img {
     display: block;
 
-    object-fit: contain;
-
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--secondary-bg-cl);
 }
 
@@ -22,13 +22,13 @@
     font-size: 18px;
     line-height: 1.56;
 
-    width: 370px;
+    width: 450px;
     height: 294px;
 
     color: var(--light-txt-cl-white);
     background: var(--bg-cards-information-box);
 
-    padding: 63px 24px;
+    padding: 77px 24px;
     margin: 0;
 
     transition-property: transform;
@@ -37,5 +37,28 @@
 
     .contaent-cards__list-cards:hover & {
         transform: translate(0, 0);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cards-information__contaent {
+        width: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+   
+
+   .cards-information__contaent {
+        width: 370px;
+    }
+
+    .cards-information__contaent {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+
+        width: 370px;
+        height: 294px;
     }
 }

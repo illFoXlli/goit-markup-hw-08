@@ -21,45 +21,38 @@
   </head>
   <body class="body-portfolio">
     <!--Шапка сайта-->
-    <header class="header">
-      <!-- Логотип -->
+     <header class="header">
+     
       <div class="container header__container">
-        <a class="logo" href="./index.html">
-          Web<span class="logo--black">Studio</span>
-        </a>
+        <a class="logo" href="./index.html"> Web<span class="logo--black">Studio</span> </a>
         <nav class="main-nav">
-          <!--Навигация сайта-->
+            <svg class="header__mob-nav-icon" width="40" height="40"><use href="./images/icons.svg#icon-nav-menu-icon"></use></svg>
+         
           <ul class="site-nav site-nav--indent-left list">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html" title="Студия" >Студия</a>
+              <a class="site-nav__link" href="./index.html" title="Студия">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current" href="./portfolio.html" title="Портфолио" >Портфолио</a>
+              <a class="site-nav__link site-nav__link--current" href="./portfolio.html" title="Портфолио">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="" title="Контакты">Контакты</a>
             </li>
           </ul>
         </nav>
-        <!--Контакты по сайту-->
-        <ul class="auth-nav  auth-nav--indent list">   
+       
+       <ul class="auth-nav auth-nav--indent list"> 
           <li class="auth-nav__item">
             <a href="mailto:info@devstudio.com" class="auth-nav__link">
               <svg width="16" height="12" class="auth-nav__envelope">
-                <use
-                  class="auth-nav__envelope-svg"
-                  href="./images/icons.svg#icon-mail_envelope"
-                ></use></svg
+                <use class="auth-nav__envelope-svg" href="./images/icons.svg#icon-mail_envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="auth-nav__item">
             <a href="tel:+380961111111" class="auth-nav__link"
               ><svg width="10" height="16" class="auth-nav__contact">
-                <use
-                  class="auth-nav__contact-svg"
-                  href="./images/icons.svg#icon-phone_smartphone"
-                ></use></svg
+                <use class="auth-nav__contact-svg" href="./images/icons.svg#icon-phone_smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
@@ -90,14 +83,13 @@
               <button type="button" class="filter-button__button-primary">Маркетинг</button>
             </li>
           </ul>
-
           <!-- Content -->
           <!-- Content 1 -->
           <ul class="contaent-cards  ">
-            <li class="list contaent-cards__list-cards ">
+            <li class=" contaent-cards__list-cards list">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
+                  <img class="cards-information__img" 
                     class="cards-information__img"
                     src="./images/portfolio1.jpg"
                     alt="фото"
@@ -124,7 +116,7 @@
             <li class="list contaent-cards__list-cards ">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
+                  <img class="cards-information__img"
                     class="cards-information__img"
                     src="./images/portfolio2.jpg"
                     alt="фото"
@@ -151,7 +143,7 @@
             <li class="list contaent-cards__list-cards ">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
+                  <img class="cards-information__img" 
                     class="cards-information__img"
                     src="./images/portfolio3.jpg"
                     alt="фото"
@@ -178,7 +170,7 @@
             <li class="list contaent-cards__list-cards ">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
+                  <img class="cards-information__img" 
                     class="cards-information__img"
                     src="./images/portfolio4.jpg"
                     alt="фото"
@@ -205,7 +197,7 @@
             <li class="list contaent-cards__list-cards ">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
+                  <img class="cards-information__img" 
                     class="cards-information__img"
                     src="./images/portfolio5.jpg"
                     alt="фото"
@@ -232,7 +224,7 @@
             <li class="list contaent-cards__list-cards ">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
+                  <img class="cards-information__img"
                     class="cards-information__img"
                     src="./images/portfolio6.jpg"
                     alt="фото"
@@ -259,7 +251,7 @@
             <li class="list contaent-cards__list-cards ">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
+                  <img class="cards-information__img" 
                     class="cards-information__img"
                     src="./images/portfolio7.jpg"
                     alt="фото"
@@ -286,7 +278,7 @@
             <li class="list contaent-cards__list-cards ">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
+                  <img class="cards-information__img" 
                     class="cards-information__img"
                     src="./images/portfolio8.jpg"
                     alt="фото"
@@ -313,7 +305,7 @@
             <li class="list contaent-cards__list-cards ">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
+                  <img class="cards-information__img"
                     class="cards-information__img"
                     src="./images/portfolio9.jpg"
                     alt="фото"
@@ -340,9 +332,10 @@
     </main>
     <!-- подвал, низ страницы -->
     <footer class="footer">
-      <!-- Контакты -->
+     
       <div class="container footer__container">
-        <div class="address">
+       <div class="footer__container-info" >
+          <div class="address address--margin">
           <a href="./index.html" class="logo logo--properties">Web<span class="logo__cl-white">Studio</span> </a>
           <address>
             <ul class="list address">
@@ -399,19 +392,21 @@
             </li>
           </ul>
         </div>
+       </div>
         <div class="form-footer">
           <p class="form-footer__titel">Подпишитесь на рассылку</p>
           <form class="form-footer__position">
-            <label>
-              <input class="form-footer__input" type="email" name="email" placeholder="E-mail" />
+            <label class="form-footer__label" >
+              <input class="form-footer__input form-footer__input--margin-top" type="email" name="email" placeholder="E-mail" />
             </label>
 
-            <button class="button button__footer-form" type="submit">
-              Подписаться<svg class="form-footer__button-svg" width="24" height="24">
+       <button class="button button__footer-form" type="submit">
+              Подписаться<svg class="button__form-footer-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-button-sent"></use>
               </svg>
             </button>
           </form>
+               
         </div>
       </div>
     </footer>

@@ -1,92 +1,92 @@
-// футер
 .footer {
   padding: 60px 0px;
   background-color: var(--bg-footer-cl);
+  text-align: center;
 }
 
-
-  .footer__icon-titel {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 14px;
-    font-weight: 700;
-    line-height: 16/14;
-    text-transform: uppercase;
-
-    color: var(--light-txt-cl-white);
-  }
-  .footer__icon-footer {
-
-  }
-
-  /* соц сети в футоре */
-  .footer__icon-link {
+.footer__container {
+  @media screen and (max-width: 768px) {
     display: flex;
-    gap: 10px;
-
-    width: 44px;
-    height: 44px;
-    background-color: var(--bg-footer-soc);
-    border-radius: 50%;
-
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-
-    transition: background var(--time-hov-foc) var(--time-cubic);
-  }
- 
-
-  .footer__icon-svg {
-    fill: var(--light-txt-cl-white);
   }
 
-  .footer__icon-link:hover {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer__container-info {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
+
+.footer__icon-titel {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: (16 / 14);
+  text-transform: uppercase;
+
+  color: var(--light-txt-cl-white);
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+/* соц сети в футоре */
+
+.footer__icon-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__icon-link {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+  background-color: var(--bg-footer-soc);
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+
+  transition: background var(--time-hov-foc) var(--time-cubic);
+  &:hover {
     background: var(--main-bg-cl);
   }
 
-  .footer__icon-link:focus {
+  &:focus {
     background: var(--main-bg-cl);
     outline: var(--outline-foc);
   }
+}
 
+.footer__icon-svg {
+  fill: var(--light-txt-cl-white);
+}
 
-
-
-
-
-
-@media screen and (min-width: 1200px) {
-
-.footer__container {
-    display: flex;
+.footer__icon-footer {
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-
-  .footer__icon-titel {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-    line-height: 1.14;
-
-  }
-  .footer__icon-footer {
+  @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-top: 12px;
   }
-
-  /* соц сети в футоре */
-  .footer__icon-link {
-    display: flex;
-    gap: 10px;
-
-    width: 44px;
-    height: 44px;
-    background-color: var(--bg-footer-soc);
-    border-radius: 50%;
-
-    justify-content: center;
-    align-items: center;
-
-    transition: background var(--time-hov-foc) var(--time-cubic);
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-right: 89px;
+    margin-top: 5px;
   }
-  
 }

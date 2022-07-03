@@ -22,7 +22,7 @@
   </head>
   <body class="body">
     <!--Шапка сайта-->
-    <!-- <header class="header">
+    <header class="header">
      
       <div class="container header__container">
         <a class="logo" href="./index.html"> Web<span class="logo--black">Studio</span> </a>
@@ -59,7 +59,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!-- уникальный контент -->
     <main class="main">
       <!-- секция Герой  -->
@@ -116,7 +116,7 @@
         </div>
       </section>
       <!-- Род занятий -->
-        <section class="occupation section"
+        <section class="occupation section">
         <div class="container">
           <h2 class="occupation__titel">Чем мы занимаемся</h2>
           <ul class="occupation__list list">
@@ -357,7 +357,8 @@
     <footer class="footer">
      
       <div class="container footer__container">
-        <div class="address">
+       <div class="footer__container-info" >
+          <div class="address address--margin">
           <a href="./index.html" class="logo logo--properties">Web<span class="logo__cl-white">Studio</span> </a>
           <address>
             <ul class="list address">
@@ -414,19 +415,21 @@
             </li>
           </ul>
         </div>
+       </div>
         <div class="form-footer">
           <p class="form-footer__titel">Подпишитесь на рассылку</p>
           <form class="form-footer__position">
-            <label>
-              <input class="form-footer__input" type="email" name="email" placeholder="E-mail" />
+            <label class="form-footer__label" >
+              <input class="form-footer__input form-footer__input--margin-top" type="email" name="email" placeholder="E-mail" />
             </label>
 
-            <button class="button button__footer-form" type="submit">
-              Подписаться<svg class="form-footer__button-svg" width="24" height="24">
+       <button class="button button__footer-form" type="submit">
+              Подписаться<svg class="button__form-footer-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-button-sent"></use>
               </svg>
             </button>
           </form>
+               
         </div>
       </div>
     </footer>

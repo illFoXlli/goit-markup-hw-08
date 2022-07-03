@@ -1,10 +1,9 @@
 // в шапке контакты
 
-@media screen and (min-width: 480px) {
+
  .auth-nav {
     display: none;
-}
-}
+ }
 
 @media screen and (min-width: 768px) {
 .auth-nav {
@@ -29,8 +28,8 @@
 
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 14 / 12;
     letter-spacing: 0.02em;
 
 

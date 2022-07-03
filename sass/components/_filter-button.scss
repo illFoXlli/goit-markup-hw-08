@@ -1,12 +1,20 @@
-// сетка с кнопками в партфолео
-.filter-button {
-    display: flex;
-    gap: 8px;
-    padding: 0;
-    margin: 0 0 50px 0;
-    justify-content: center;
+// сетка с кнопками в партфолео\
+@media screen and (max-width: 768px) {
+    .filter-button {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: flex-start;
+        
 
-    &__button-primary {
+        padding: 0;
+        margin: 0 0 50px 0;
+
+        // &:nth-child(n+1) {
+        //    break-after: always;
+        // }
+    }
+    .filter-button__button-primary {
         background-color: var(--button-text-color);
         color: var(--main-txt-cl);
 
@@ -27,15 +35,56 @@
         transition-property: color, background-color;
         transition-duration: var(--time-hov-foc);
         transition-timing-function: var(--time-cubic);
-    }
 
-    &__button-primary:hover,
-    &__button-primary:focus {
-        background-color: var(--main-bg-cl);
-        color: var(--light-txt-cl-white);
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        &:hover,
+        &:focus {
+            background-color: var(--main-bg-cl);
+            color: var(--light-txt-cl-white);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+        &:focus {
+            outline: var(--outline-foc);
+        }
     }
-    &__button-primary:focus {
-        outline: var(--outline-foc);
+}
+@media screen and (min-width: 768px) {
+    .filter-button {
+        display: flex;
+        gap: 8px;
+        padding: 0;
+        margin: 0 0 50px 0;
+        justify-content: center;
+    }
+    .filter-button__button-primary {
+        background-color: var(--button-text-color);
+        color: var(--main-txt-cl);
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+
+        padding: 6px 22px;
+
+        border: none;
+        font-family: inherit;
+        letter-spacing: inherit;
+        cursor: pointer;
+        align-items: center;
+        text-align: center;
+        border-radius: 4px;
+
+        transition-property: color, background-color;
+        transition-duration: var(--time-hov-foc);
+        transition-timing-function: var(--time-cubic);
+
+        &:hover,
+        &:focus {
+            background-color: var(--main-bg-cl);
+            color: var(--light-txt-cl-white);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+        &:focus {
+            outline: var(--outline-foc);
+        }
     }
 }

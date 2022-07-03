@@ -1,9 +1,9 @@
 // в шапке контакты
-@media screen and (min-width: 480px) {
+
   .site-nav {
         display: none;
     }
-}
+
 
 @media screen and (min-width: 768px) {
   .site-nav {
@@ -18,7 +18,7 @@
         text-decoration: none;
         font-weight: 500;
         font-size: 14px;
-        line-height: 1.14;
+        line-height: (16 / 14);
         letter-spacing: 0.02em;
 
         transition-property: color;

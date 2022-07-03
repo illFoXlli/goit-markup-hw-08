@@ -1,7 +1,19 @@
 // адресс в футоре
 
-.address__item:not(:last-child) {
-    margin-bottom: 9px;
+.address {
+    text-align: center;
+
+    &--margin {
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            margin-left: 76px;
+            margin-bottom: 60px;
+        }
+
+    }
+
+    @media screen and (min-width: 1200px){
+           text-align: left;
+    }
 }
 
 .address__link {
@@ -10,33 +22,21 @@
     text-decoration: none;
     outline: none;
 
-    transition-property: color;
-    transition-duration: var(--time-hov-foc);
-    transition-timing-function: var(--time-cubic);
-}
+    font-weight: 400;
+    font-size: 14px;
+    line-height: (24 / 14);
 
-.address__link:focus,
-.address__link:hover {
-    color: var(--main-bg-cl);
-}
-.address__item:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-.address__link {
-    font-style: normal;
-    color: var(--light-txt-cl-white);
-    text-decoration: none;
-    outline: none;
+    text-align: center;
+    letter-spacing: 0.03em;
 
     transition-property: color;
     transition-duration: var(--time-hov-foc);
     transition-timing-function: var(--time-cubic);
-}
 
-.address__link:focus,
-.address__link:hover {
-    color: var(--main-bg-cl);
+    &:focus,
+    &:hover {
+        color: var(--main-bg-cl);
+    }
 }
 
 .address__link-contact {
@@ -46,16 +46,7 @@
     line-height: 1.71;
 
     display: block;
-}
-.address__link-contact + .address__link-contact {
-    display: block;
-    margin-bottom: 9px;
-}
-.address__link-contact:hover {
-    color: var(--main-bg-cl);
-}
 
-.address__link-contact {
     font-style: normal;
     color: var(--address__link-text-cl);
     outline: none;
@@ -64,10 +55,31 @@
     transition-property: color;
     transition-duration: var(--time-hov-foc);
     transition-timing-function: var(--time-cubic);
+
+    &__link-contact + &__link-contact {
+        display: block;
+        margin-bottom: 9px;
+    }
+    &:hover {
+        color: var(--main-bg-cl);
+    }
+
+
+    &:hover,
+    &:focus {
+        color: var(--main-bg-cl);
+        outline: vap(--outline-foc);
+    }
 }
 
-.address__link-contact:hover,
-.address__link-contact:focus {
-    color: var(--main-bg-cl);
-    outline: vap(--outline-foc);
+.address__item {
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    }
 }

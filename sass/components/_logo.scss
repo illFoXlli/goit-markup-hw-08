@@ -1,4 +1,3 @@
-
 // Логотип
 .logo {
     color: var(--logo-cl-secondary);
@@ -9,6 +8,11 @@
     line-height: 1.19;
 
     text-decoration: none;
+    text-align: center;
+
+    &--properties {
+        margin-bottom: 20px;
+    }
 
     &--black {
         color: var(--logo-cl-blakc);
@@ -17,12 +21,15 @@
     &:focus {
         outline-color: var(--main-bg-cl);
     }
-    &__cl-white {
-        color: var(--logo-cl-white);
-    }
 
     &--properties {
         display: block;
-        margin-bottom: 20px;
     }
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
+.logo__cl-white {
+    color: var(--logo-cl-white);
 }

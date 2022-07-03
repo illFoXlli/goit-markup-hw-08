@@ -1,38 +1,88 @@
 // на портфолее контейнер для карточек
+
 .contaent-cards {
-    display: flex;
-    row-gap: 30px;
-    column-gap: 30px;
-    flex-wrap: wrap;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+.cards-information__img {
+    width: 450px;
+    height: 294px;
+    object-fit: cover;
+}
+.contaent-cards__link {
+    width: 450px;
+    height: 404px;
 
-    &__link {
-        display: block;
-        text-decoration: inherit;
-        color: inherit;
-    }
-    &__link:hover {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-decoration: inherit;
+    color: inherit;
+    &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-
-    &__link:focus {
+    &:focus {
         outline: var(--outline-foc);
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+}
 
-    &__list-cards {
+.contaent-cards__list-cards {
+    position: relative;
+    margin-left: 0;
+    display: block;
+
+    background-color: var(--secondary-bg-cl);
+    @media screen and (max-width: 768px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contaent-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-basis: (768px - 60px) / 2;
+    }
+    .cards-information__img {
+        width: 354px;
+        height: 294px;
+    }
+    .contaent-cards__link {
+        width: 354px;
+        height: 440px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .contaent-cards {
+        display: flex;
+        row-gap: 30px;
+        column-gap: 30px;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .contaent-cards__list-cards {
         margin-left: 0;
         display: block;
-        /* width: calc((100% - var(--indent)) / var(--items)); */
 
         background-color: var(--secondary-bg-cl);
 
         position: relative;
-        /* overflow: hidden; */
+       
+    }
+    .cards-information__img {
+        width: 370px;
+        height: 294px;
+    }
+    .contaent-cards__link {
+        width: 370px;
+        height: 404px;
     }
 }
-
-
-

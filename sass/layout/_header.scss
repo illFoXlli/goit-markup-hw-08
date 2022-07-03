@@ -1,14 +1,14 @@
 // шапка сайта
 
-
-@media screen and (min-width: 480px) {
-    .header__mob-nav-icon {
-        outline: 1px solid tomato;
-    }
-    .header__container {
-        display: flex;
-        justify-content: space-between;
-    }
+.header__mob-nav-icon {
+  
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
