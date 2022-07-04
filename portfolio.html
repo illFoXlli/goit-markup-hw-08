@@ -25,7 +25,7 @@
   </head>
   <body class="body-portfolio">
     <!--Шапка сайта-->
-    <header class="header">
+   <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html">
           Web<span class="logo--black">Studio</span>
@@ -55,7 +55,10 @@
           <div class="header__menu-drop" data-menu></div>
           <ul class="site-nav site-nav--indent-left list" data-menu-nav>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html" title="Студия"
+              <a
+                class="site-nav__link "
+                href="./index.html"
+                title="Студия"
                 >Студия</a
               >
             </li>
@@ -74,8 +77,17 @@
         </nav>
 
         <ul class="auth-nav auth-nav--indent list" data-menu-auth>
+          <li class="auth-nav__item"> 
+            <a class="auth-nav__soc" href="">Instagram</a>
+            <a class="auth-nav__soc" href="">Twitter</a>
+            <a class="auth-nav__soc" href="">Facebook</a>
+            <a class="auth-nav__soc" href="">LinkedIn</a>
+          </li>
           <li class="auth-nav__item">
-            <a href="mailto:info@devstudio.com" class="auth-nav__link">
+            <a
+              href="mailto:info@devstudio.com"
+              class="auth-nav__link auth-nav__link--size"
+            >
               <svg width="16" height="12" class="auth-nav__envelope">
                 <use
                   class="auth-nav__envelope-svg"
@@ -85,7 +97,7 @@
             >
           </li>
           <li class="auth-nav__item">
-            <a href="tel:+380961111111" class="auth-nav__link"
+            <a href="tel:+380961111111" class="auth-nav__link auth-nav__link--cl"
               ><svg width="10" height="16" class="auth-nav__contact">
                 <use
                   class="auth-nav__contact-svg"
