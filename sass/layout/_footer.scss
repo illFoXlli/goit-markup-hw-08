@@ -2,9 +2,14 @@
   padding: 60px 0px;
   background-color: var(--bg-footer-cl);
   text-align: center;
+
+    @media screen and (max-width: 480px) {
+    width: 480px;
+  }
 }
 
 .footer__container {
+
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;

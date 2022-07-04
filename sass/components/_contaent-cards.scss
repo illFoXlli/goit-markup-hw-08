@@ -49,12 +49,12 @@
         flex-basis: (768px - 60px) / 2;
     }
     .cards-information__img {
-        width: 354px;
-        height: 294px;
+        max-width: 354px;
+        max-height: 294px;
     }
     .contaent-cards__link {
-        width: 354px;
-        height: 440px;
+        max-width: 354px;
+        max-height: 440px;
     }
 }
 @media screen and (min-width: 1200px) {

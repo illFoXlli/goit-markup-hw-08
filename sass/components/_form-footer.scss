@@ -43,19 +43,20 @@
     &:focus-visible {
         outline: var(--main-bg-cl) auto 1px;
     }
-
+    // @media screen and (max-width: 451px) {
+    //     width: 330px;
+    // }
     @media screen and (max-width: 1200px) {
         &--margin-top {
             margin-bottom: 20px;
         }
     }
     @media screen and (min-width: 1200px) {
-         width: 358px;
+        width: 358px;
     }
 }
 
 @media screen and (min-width: 768px) {
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -70,6 +71,4 @@
         justify-content: center;
         align-items: center;
     }
-
-   
 }

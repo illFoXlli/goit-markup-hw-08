@@ -49,6 +49,12 @@
 .checkbox__text {
   color: var(--bg-form-cl);
   margin-left: 8px;
+  @media screen and (max-width: 1200px) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: (14 / 12);
+    letter-spacing: 0.03em;
+  }
 }
 
 .checkbox__link-text {

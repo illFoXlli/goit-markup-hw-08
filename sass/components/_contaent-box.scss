@@ -3,7 +3,8 @@
 .contaent-box {
     display: block;
 
-    width: 450px;
+    width: 354px;
+    height: 146px;
     margin-left: auto;
     margin-right: auto;
 
@@ -29,8 +30,8 @@
 }
 @media screen and (min-width: 768px) {
     .contaent-box {
-        height: 146px;
         width: 354px;
+        height: 146px;
     }
 }
 @media screen and (min-width: 1200px) {

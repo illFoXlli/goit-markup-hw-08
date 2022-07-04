@@ -1,14 +1,72 @@
-// шапка сайта
+.header {
+    position: relative;
+}
+// header__menu-drop is-open
+.header__menu-button {
+    position: relative;
+    z-index: 100;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    &:focus-visible {
+        outline-color: var(--main-bg-cl);
+    }
+
+    & .header__icon-close {
+        display: none;
+    }
+
+    &.is-open .header__icon-close {
+        display: block;
+        z-index: 100;
+    }
+    &.is-open .header__icon-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__menu-drop {
+        display: none;
+
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+
+        width: 100%;
+        height: 796px;
+        background-color: #ffffff;
+
+        // outline: 1px solid tomato;
+
+        &.is-open {
+            display: block;
+        }
+    }
+}
 
 .header__mob-nav-icon {
-  
     margin-top: 10px;
     margin-bottom: 10px;
+
+    &:hover,
+    &:focus {
+        fill: var(--main-bg-cl);
+    }
 }
 .header__container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+    .header__container {
+        width: 480px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -20,6 +78,10 @@
         align-items: center;
     }
     .header__mob-nav-icon {
+        display: none;
+    }
+
+    .header__menu-button {
         display: none;
     }
 }
