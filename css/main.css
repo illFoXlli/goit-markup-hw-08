@@ -418,7 +418,7 @@ body.no-scroll {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .container {
     max-width: 768px;
   }
@@ -766,6 +766,12 @@ body.no-scroll {
   }
 }
 
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .auth-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .auth-nav {
     display: block;
@@ -773,9 +779,6 @@ body.no-scroll {
   }
   .auth-nav__item {
     position: relative;
-  }
-  .auth-nav__item:not(:last-child) {
-    margin-bottom: 10px;
   }
   .auth-nav__link {
     display: inline-flex;
