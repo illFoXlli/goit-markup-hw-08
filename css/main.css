@@ -470,6 +470,7 @@ body.no-scroll {
 .header__menu-button.is-open .header__icon-close {
   display: block;
   z-index: 100;
+  position: absolute;
 }
 
 .header__menu-button.is-open .header__icon-menu {
@@ -508,8 +509,13 @@ body.no-scroll {
   fill: var(--main-bg-cl);
 }
 
+.header__mob-nav-icon.is-open {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .header__container {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -718,6 +724,7 @@ body.no-scroll {
     font-size: 18px;
     line-height: 1.22222;
     letter-spacing: 0.02em;
+    text-decoration: none;
     color: #2196f3;
   }
   .auth-nav__contact,
@@ -742,11 +749,13 @@ body.no-scroll {
     letter-spacing: 0.02em;
     color: #2196f3;
   }
-  .auth-nav__soc:not(:last-child) {
-    margin-right: 20px;
-  }
   .auth-nav__item {
     display: flex;
+  }
+  .auth-nav__soc-link-l {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgba(33, 33, 33, 0.2);
   }
 }
 

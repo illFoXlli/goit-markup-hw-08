@@ -38,9 +38,8 @@
         font-weight: 500;
         font-size: 18px;
         line-height: (22/18);
-
         letter-spacing: 0.02em;
-
+        text-decoration: none;
         color: #2196f3;
     }
 
@@ -67,11 +66,16 @@
         letter-spacing: 0.02em;
         color: #2196f3;
     }
-    .auth-nav__soc:not(:last-child) {
-        margin-right: 20px;
-    }
+    // .auth-nav__soc:not(:last-child) {
+    //     margin-right: 20px;
+    // }
     .auth-nav__item {
         display: flex;
+    }
+    .auth-nav__soc-link-l {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: rgba(33, 33, 33, 0.2);
     }
 }
 
@@ -91,7 +95,7 @@
     .auth-nav__link {
         display: inline-flex;
         align-items: center;
-         gap: 10px;
+        gap: 10px;
 
         color: var(--secondary-txt-cl);
 
@@ -145,15 +149,14 @@
 
     .auth-nav__item {
         position: relative;
-           
-        margin-bottom:0;
+
+        margin-bottom: 0;
     }
-    
 
     .auth-nav__link {
         display: inline-flex;
         align-items: center;
-   
+
         color: var(--secondary-txt-cl);
 
         text-decoration: none;
@@ -192,6 +195,6 @@
         outline: var(--outline-foc);
     }
     .auth-nav--indent {
-      gap:30px;
+        gap: 30px;
     }
 }

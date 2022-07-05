@@ -2,6 +2,8 @@
     position: relative;
 
     border-bottom: 1px solid var(--cl-border);
+
+
 }
 // header__menu-drop is-open
 .header__menu-button {
@@ -24,9 +26,10 @@
     }
 
     &.is-open .header__icon-close {
-
+            // transform: translate(0, 0);
         display: block;
         z-index: 100;
+        position: absolute;
     }
     &.is-open .header__icon-menu {
         display: none;
@@ -47,7 +50,6 @@
 
         background-color: #ffffff;
 
-
         padding: 48px 40px;
         overflow-y: scroll;
 
@@ -61,6 +63,7 @@
     }
 }
 
+
 .header__mob-nav-icon {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -69,9 +72,15 @@
     &:focus {
         fill: var(--main-bg-cl);
     }
+
+    &.is-open {
+         position: absolute;
+        top: 0;
+        left: 0;   
+    }
 }
 .header__container {
-    position: relative;
+    // position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
