@@ -24,6 +24,17 @@
     & .header__icon-close {
         display: none;
     }
+&.is-open {
+    // position:absolute;
+    // top:0;
+    // left: 0;
+    // transform: translate(1000%, 0);
+    
+    
+    
+    // outline: 1px solid tomato;
+}
+
 
     &.is-open .header__icon-close {
             // transform: translate(0, 0);
