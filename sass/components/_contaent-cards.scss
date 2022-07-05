@@ -6,16 +6,11 @@
     margin-bottom: 0;
 }
 .cards-information__img {
-    width: 450px;
-    height: 294px;
+    width: 100%;
     object-fit: cover;
+    object-position: center;
 }
 .contaent-cards__link {
-    width: 450px;
-    height: 404px;
-
-    margin-left: auto;
-    margin-right: auto;
     display: block;
     text-decoration: inherit;
     color: inherit;
@@ -30,59 +25,71 @@
 
 .contaent-cards__list-cards {
     position: relative;
-    margin-left: 0;
+    // outline: 1px solid tomato;
     display: block;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-color: var(--secondary-bg-cl);
+
     @media screen and (max-width: 768px) {
         &:not(:last-child) {
             margin-bottom: 30px;
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .contaent-cards__list-cards:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
 
 @media screen and (min-width: 768px) {
+    .contaent-cards__list-cards {
+      width: 354px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
     .contaent-cards {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        flex-basis: (768px - 60px) / 2;
+
+        // align-items: flex-start;
+        // --indent: 30px;
+        // --item: 2;
+        // flex-basis: 370px
+        //  calc((100% - var(--indent) * (var(--item) - 1)) / (var(--item)));
+
+        // height: 404px;
     }
-    .cards-information__img {
-        max-width: 354px;
-        max-height: 294px;
-    }
+
     .contaent-cards__link {
-        max-width: 354px;
-        max-height: 440px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 }
 @media screen and (min-width: 1200px) {
     .contaent-cards {
         display: flex;
-        row-gap: 30px;
-        column-gap: 30px;
-        flex-wrap: wrap;
+        // row-gap: 30px;
+        // column-gap: 30px;
+        // flex-wrap: wrap;
         padding-left: 0;
         margin-top: 0;
         margin-bottom: 0;
+        // width: 370px;
     }
 
-    .contaent-cards__list-cards {
-        margin-left: 0;
-        display: block;
-
-        background-color: var(--secondary-bg-cl);
-
-        position: relative;
+    .cards-information__img {
        
     }
-    .cards-information__img {
-        width: 370px;
-        height: 294px;
-    }
-    .contaent-cards__link {
-        width: 370px;
-        height: 404px;
+    .contaent-cards__list-cards {
+      width: 370px;
+      margin-left: 0;
+      margin-right: 0;
     }
 }

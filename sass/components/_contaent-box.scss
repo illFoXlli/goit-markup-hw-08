@@ -2,9 +2,7 @@
 
 .contaent-box {
     display: block;
-
-    width: 354px;
-    height: 146px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 
@@ -30,13 +28,12 @@
 }
 @media screen and (min-width: 768px) {
     .contaent-box {
-        width: 354px;
-        height: 146px;
+        width: 100%;
+flex-grow: 1;
+        // flex-grow: 3;
     }
 }
 @media screen and (min-width: 1200px) {
     .contaent-box {
-        width: 370px;
-        height: 110px;
     }
 }

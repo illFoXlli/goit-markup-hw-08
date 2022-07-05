@@ -1,7 +1,8 @@
 // приемущество на индексе
 .advantage {
     &__item {
-        width: 450px;
+        width: 100%;
+        height: 226px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -26,7 +27,7 @@
 
     &__svg-box {
         display: flex;
-        width: 450px;
+        width: 100%;
         height: 120px;
         margin-bottom: 30px;
 
@@ -38,11 +39,22 @@
         align-items: center;
     }
 
+    @media screen and (min-width: 451px) {
+    } &__item {
+             max-width: 450px;
+           
+            margin-left: auto;
+            margin-right: auto;
+        }
+
     @media screen and (max-width: 768px) {
         &__item:not(:last-child) {
             margin-bottom: 30px;
         }
+
+
     }
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;

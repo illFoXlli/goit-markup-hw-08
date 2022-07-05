@@ -18,90 +18,100 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
-  <body class="body">
+  <body class="body ">
     <!--Шапка сайта-->
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html">
           Web<span class="logo--black">Studio</span>
         </a>
-        <nav class="main-nav">
-          <button
-            class="header__menu-button"
-            aria-expanded="false"
-            data-menu-button
+        <button
+          class="header__menu-button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            class="header__mob-nav-icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
-            <svg
-              class="header__mob-nav-icon"
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                Class="header__icon-close"
-                href="./images/icons.svg#icon-nav-menu-icon-close"
-              ></use>
-              <use
-                Class="header__icon-menu"
-                href="./images/icons.svg#icon-nav-menu-icon"
-              ></use>
-            </svg>
-          </button>
-          <div class="header__menu-drop" data-menu></div>
-          <ul class="site-nav site-nav--indent-left list" data-menu-nav>
-            <li class="site-nav__item">
+            <use
+              Class="header__icon-close"
+              href="./images/icons.svg#icon-nav-menu-icon-close"
+            ></use>
+            <use
+              Class="header__icon-menu"
+              href="./images/icons.svg#icon-nav-menu-icon"
+            ></use>
+          </svg>
+        </button>
+        <div class="header__menu-drop" data-menu>
+          <nav class="header__main-nav">
+            <ul class="site-nav site-nav--indent-left list" data-menu-nav>
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link site-nav__link--current"
+                  href="./index.html"
+                  title="Студия"
+                  >Студия</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link"
+                  href="./portfolio.html"
+                  title="Портфолио"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="" title="Контакты">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="auth-nav auth-nav--indent list">
+            <li class="auth-nav__item">
               <a
-                class="site-nav__link site-nav__link--current"
-                href="./index.html"
-                title="Студия"
-                >Студия</a
+                href="mailto:info@devstudio.com"
+                class="auth-nav__link auth-nav__link--size"
+              >
+                <svg width="16" height="12" class="auth-nav__envelope">
+                  <use
+                    class="auth-nav__envelope-svg"
+                    href="./images/icons.svg#icon-mail_envelope"
+                  ></use></svg
+                >info@devstudio.com</a
               >
             </li>
-            <li class="site-nav__item">
+            <li class="auth-nav__item">
               <a
-                class="site-nav__link"
-                href="./portfolio.html"
-                title="Портфолио"
-                >Портфолио</a
+                href="tel:+380961111111"
+                class="auth-nav__link auth-nav__link--cl"
+                ><svg width="10" height="16" class="auth-nav__contact">
+                  <use
+                    class="auth-nav__contact-svg"
+                    href="./images/icons.svg#icon-phone_smartphone"
+                  ></use></svg
+                >+38 096 111 11 11</a
               >
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="" title="Контакты">Контакты</a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="auth-nav auth-nav--indent list" data-menu-auth>
-          <li class="auth-nav__item"> 
-            <a class="auth-nav__soc" href="">Instagram</a>
-            <a class="auth-nav__soc" href="">Twitter</a>
-            <a class="auth-nav__soc" href="">Facebook</a>
-            <a class="auth-nav__soc" href="">LinkedIn</a>
-          </li>
-          <li class="auth-nav__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="auth-nav__link auth-nav__link--size"
-            >
-              <svg width="16" height="12" class="auth-nav__envelope">
-                <use
-                  class="auth-nav__envelope-svg"
-                  href="./images/icons.svg#icon-mail_envelope"
-                ></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="auth-nav__item">
-            <a href="tel:+380961111111" class="auth-nav__link auth-nav__link--cl"
-              ><svg width="10" height="16" class="auth-nav__contact">
-                <use
-                  class="auth-nav__contact-svg"
-                  href="./images/icons.svg#icon-phone_smartphone"
-                ></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="auth-nav__item list">
+            <li class="auth-nav__soc">
+              <a class="auth-nav__soc-link" href="">Instagram</a>
+            </li>
+            <li class="auth-nav__soc">
+              <a class="auth-nav__soc-link" href="">Twitter</a>
+            </li>
+            <li class="auth-nav__soc">
+              <a class="auth-nav__soc-link" href="">Facebook</a>
+            </li>
+            <li class="auth-nav__soc">
+              <a class="auth-nav__soc-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- уникальный контент -->
@@ -218,13 +228,40 @@
 
           <ul class="team__list list">
             <li class="team__card">
-              <img
-                class="team--no-line team__img"
-                src="./images/team1.jpg"
-                alt="Фото"
-                width="270"
-                height="260"
-              />
+              <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/team/team-1_lg.jpg    1x,
+                       ./images/team/team-1_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/team/team-1_md.jpg    1x,
+                       ./images/team/team-1_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                         ./images/team/team-1_sm.jpg    1x,
+                       ./images/team/team-1_sm@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src=" ./images/team/team-1_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
 
               <div class="card">
                 <h3 class="card__people">Игорь Демьяненко</h3>
@@ -285,13 +322,40 @@
             </li>
 
             <li class="team__card">
-              <img
-                class="team--no-line team__img"
-                src="./images/team2.jpg"
-                alt="Фото"
-                width="270"
-                height="260"
-              />
+               <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/team/team-2_lg.jpg    1x,
+                       ./images/team/team-2_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/team/team-2_md.jpg    1x,
+                       ./images/team/team-2_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                         ./images/team/team-2_sm.jpg    1x,
+                       ./images/team/team-2_sm@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src=" ./images/team/team-2_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
               <div class="card">
                 <h3 class="card__people">Ольга Репина</h3>
                 <p class="card__work">Frontend Developer</p>
@@ -351,13 +415,40 @@
             </li>
 
             <li class="team__card">
-              <img
-                class="team--no-line team__img"
-                src="./images/team3.jpg"
-                alt="Фото"
-                width="270"
-                height="260"
-              />
+                 <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/team/team-3_lg.jpg    1x,
+                       ./images/team/team-3_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/team/team-3_md.jpg    1x,
+                       ./images/team/team-3_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                         ./images/team/team-3_sm.jpg    1x,
+                       ./images/team/team-3_sm@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src=" ./images/team/team-3_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
               <div class="card">
                 <h3 class="card__people">Николай Тарасов</h3>
                 <p class="card__work">Marketing</p>
@@ -417,13 +508,40 @@
             </li>
 
             <li class="team__card">
-              <img
-                class="team--no-line team__img"
-                src="./images/team4.jpg"
-                alt="фото"
-                width="270"
-                height="260"
-              />
+                <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/team/team-4_lg.jpg    1x,
+                       ./images/team/team-4_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/team/team-4_md.jpg    1x,
+                       ./images/team/team-4_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                         ./images/team/team-4_sm.jpg    1x,
+                       ./images/team/team-4_sm@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src=" ./images/team/team-4_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
               <div class="card">
                 <h3 class="card__people">Михаил Ермаков</h3>
                 <p class="card__work">UI Designer</p>
@@ -658,19 +776,34 @@
     <!-- Модальное окно -->
     <div class="backdrop backdrop__is-hidden" data-modal>
       <div class="modal">
-        <strong class="modal__title">Оставьте свои данные, мы вам перезвоним</strong>
+        <strong class="modal__title"
+          >Оставьте свои данные, мы вам перезвоним</strong
+        >
         <button class="modal__button-close" data-modal-close>
           <svg class="modal__icon-close" width="30" height="30">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
-       <form class="form-modal" name="signup_form" autocomplete="on" novalidate>
+        <form
+          class="form-modal"
+          name="signup_form"
+          autocomplete="on"
+          novalidate
+        >
           <ul>
             <li class="form-modal__grup list">
               <label class="form-modal__label">
                 Имя
-                <input class="form-modal__input" type="text" name="name" required minlength="3" maxlength="12" placeholder=" " />
+                <input
+                  class="form-modal__input"
+                  type="text"
+                  name="name"
+                  required
+                  minlength="3"
+                  maxlength="12"
+                  placeholder=" "
+                />
                 <svg class="form-modal__input-svg" width="18" height="18">
                   <use href="./images/icons.svg#icon-person-black"></use>
                 </svg>
@@ -698,14 +831,23 @@
             <li class="form-modal__grup list">
               <label class="form-modal__label">
                 Комментарий
-                <textarea class="form-modal__input comment" type="text" name="comment" placeholder="Введите текст"></textarea>
+                <textarea
+                  class="form-modal__input comment"
+                  type="text"
+                  name="comment"
+                  placeholder="Введите текст"
+                ></textarea>
               </label>
             </li>
           </ul>
           <div class="form-modal__grup">
-
             <label class="checkbox" name="agreement">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="agreement" required />
+              <input
+                class="checkbox__input visually-hidden"
+                type="checkbox"
+                name="agreement"
+                required
+              />
 
               <span class="checkbox__position">
                 <svg class="checkbox__icon" width="16" height="15">
@@ -720,7 +862,9 @@
             </label>
           </div>
           <div class="button-form-button">
-            <button class="button button__modal" type="submit" desablet>Отправить</button>
+            <button class="button button__modal" type="submit" desablet>
+              Отправить
+            </button>
           </div>
         </form>
       </div>

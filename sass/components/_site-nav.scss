@@ -2,13 +2,9 @@
 
 @media screen and (max-width: 768px) {
     .site-nav {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(48px, 40px);
-        z-index: 100;
-
-        display: none;
+        
+      display: block;
+        
 
         &.is-open {
             display: block;

@@ -25,91 +25,99 @@
   </head>
   <body class="body-portfolio">
     <!--Шапка сайта-->
-   <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html">
           Web<span class="logo--black">Studio</span>
         </a>
-        <nav class="main-nav">
-          <button
-            class="header__menu-button"
-            aria-expanded="false"
-            data-menu-button
+        <button
+          class="header__menu-button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            class="header__mob-nav-icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
-            <svg
-              class="header__mob-nav-icon"
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                Class="header__icon-close"
-                href="./images/icons.svg#icon-nav-menu-icon-close"
-              ></use>
-              <use
-                Class="header__icon-menu"
-                href="./images/icons.svg#icon-nav-menu-icon"
-              ></use>
-            </svg>
-          </button>
-          <div class="header__menu-drop" data-menu></div>
-          <ul class="site-nav site-nav--indent-left list" data-menu-nav>
-            <li class="site-nav__item">
+            <use
+              Class="header__icon-close"
+              href="./images/icons.svg#icon-nav-menu-icon-close"
+            ></use>
+            <use
+              Class="header__icon-menu"
+              href="./images/icons.svg#icon-nav-menu-icon"
+            ></use>
+          </svg>
+        </button>
+        <div class="header__menu-drop" data-menu>
+          <nav class="header__main-nav">
+            <ul class="site-nav site-nav--indent-left list" data-menu-nav>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./index.html" title="Студия"
+                  >Студия</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link site-nav__link--current"
+                  href="./portfolio.html"
+                  title="Портфолио"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="" title="Контакты">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="auth-nav auth-nav--indent list">
+            <li class="auth-nav__item">
               <a
-                class="site-nav__link "
-                href="./index.html"
-                title="Студия"
-                >Студия</a
+                href="mailto:info@devstudio.com"
+                class="auth-nav__link auth-nav__link--size"
+              >
+                <svg width="16" height="12" class="auth-nav__envelope">
+                  <use
+                    class="auth-nav__envelope-svg"
+                    href="./images/icons.svg#icon-mail_envelope"
+                  ></use></svg
+                >info@devstudio.com</a
               >
             </li>
-            <li class="site-nav__item">
+            <li class="auth-nav__item">
               <a
-                class="site-nav__link site-nav__link--current"
-                href="./portfolio.html"
-                title="Портфолио"
-                >Портфолио</a
+                href="tel:+380961111111"
+                class="auth-nav__link auth-nav__link--cl"
+                ><svg width="10" height="16" class="auth-nav__contact">
+                  <use
+                    class="auth-nav__contact-svg"
+                    href="./images/icons.svg#icon-phone_smartphone"
+                  ></use></svg
+                >+38 096 111 11 11</a
               >
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="" title="Контакты">Контакты</a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="auth-nav auth-nav--indent list" data-menu-auth>
-          <li class="auth-nav__item"> 
-            <a class="auth-nav__soc" href="">Instagram</a>
-            <a class="auth-nav__soc" href="">Twitter</a>
-            <a class="auth-nav__soc" href="">Facebook</a>
-            <a class="auth-nav__soc" href="">LinkedIn</a>
-          </li>
-          <li class="auth-nav__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="auth-nav__link auth-nav__link--size"
-            >
-              <svg width="16" height="12" class="auth-nav__envelope">
-                <use
-                  class="auth-nav__envelope-svg"
-                  href="./images/icons.svg#icon-mail_envelope"
-                ></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="auth-nav__item">
-            <a href="tel:+380961111111" class="auth-nav__link auth-nav__link--cl"
-              ><svg width="10" height="16" class="auth-nav__contact">
-                <use
-                  class="auth-nav__contact-svg"
-                  href="./images/icons.svg#icon-phone_smartphone"
-                ></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="auth-nav__item list">
+            <li class="auth-nav__soc">
+              <a class="auth-nav__soc-link" href="">Instagram</a>
+            </li>
+            <li class="auth-nav__soc">
+              <a class="auth-nav__soc-link" href="">Twitter</a>
+            </li>
+            <li class="auth-nav__soc">
+              <a class="auth-nav__soc-link" href="">Facebook</a>
+            </li>
+            <li class="auth-nav__soc">
+              <a class="auth-nav__soc-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- уникальный контент -->
+
     <main>
       <!-- Button -->
       <!-- Интересно зачем мєнтор сказал поставить тут секцию... Надеюсь осознание придет позже... -->
@@ -150,14 +158,44 @@
             <li class="contaent-cards__list-cards list">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
-                    class="cards-information__img"
-                    class="cards-information__img"
-                    src="./images/portfolio1.jpg"
-                    alt="фото"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-1_lg.jpg    1x,
+                        ./images/portfolio/portfolio-1_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-1_md.jpg    1x,
+                        ./images/portfolio/portfolio-1_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-1_mob.jpg    1x,
+                        ./images/portfolio/portfolio-1_mob@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src="./images/portfolio/portfolio-1_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+                  <!-- --------------------------------------------------------------------------------------- -->
+
+                  <!-- ---------------------------------------------------------------------------------------- -->
+
                   <div class="cards-information__contaent">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -179,14 +217,40 @@
             <li class="list contaent-cards__list-cards">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
-                    class="cards-information__img"
-                    class="cards-information__img"
-                    src="./images/portfolio2.jpg"
-                    alt="фото"
-                    width="370"
-                    height="294"
-                  />
+                   <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-2_lg.jpg    1x,
+                        ./images/portfolio/portfolio-2_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-2_md.jpg    1x,
+                        ./images/portfolio/portfolio-2_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-2_mob.jpg    1x,
+                        ./images/portfolio/portfolio-2_mob@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src="./images/portfolio/portfolio-2_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="cards-information__contaent">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -210,14 +274,40 @@
             <li class="list contaent-cards__list-cards">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
-                    class="cards-information__img"
-                    class="cards-information__img"
-                    src="./images/portfolio3.jpg"
-                    alt="фото"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-3_lg.jpg    1x,
+                        ./images/portfolio/portfolio-3_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-3_md.jpg    1x,
+                        ./images/portfolio/portfolio-3_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-3_mob.jpg    1x,
+                        ./images/portfolio/portfolio-3_mob@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src="./images/portfolio/portfolio-3_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="cards-information__contaent">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -239,14 +329,40 @@
             <li class="list contaent-cards__list-cards">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
-                    class="cards-information__img"
-                    class="cards-information__img"
-                    src="./images/portfolio4.jpg"
-                    alt="фото"
-                    width="370"
-                    height="294"
-                  />
+                   <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-4_lg.jpg    1x,
+                        ./images/portfolio/portfolio-4_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-4_md.jpg    1x,
+                        ./images/portfolio/portfolio-4_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-4_mob.jpg    1x,
+                        ./images/portfolio/portfolio-4_mob@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src="./images/portfolio/portfolio-4_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="cards-information__contaent">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -268,14 +384,40 @@
             <li class="list contaent-cards__list-cards">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
-                    class="cards-information__img"
-                    class="cards-information__img"
-                    src="./images/portfolio5.jpg"
-                    alt="фото"
-                    width="370"
-                    height="294"
-                  />
+                 <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-5_lg.jpg    1x,
+                        ./images/portfolio/portfolio-5_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-5_md.jpg    1x,
+                        ./images/portfolio/portfolio-5_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-5_mob.jpg    1x,
+                        ./images/portfolio/portfolio-5_mob@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src="./images/portfolio/portfolio-5_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="cards-information__contaent">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -297,14 +439,40 @@
             <li class="list contaent-cards__list-cards">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
-                    class="cards-information__img"
-                    class="cards-information__img"
-                    src="./images/portfolio6.jpg"
-                    alt="фото"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-6_lg.jpg    1x,
+                        ./images/portfolio/portfolio-6_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-6_md.jpg    1x,
+                        ./images/portfolio/portfolio-6_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-6_mob.jpg    1x,
+                        ./images/portfolio/portfolio-6_mob@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src="./images/portfolio/portfolio-6_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="cards-information__contaent">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -328,14 +496,40 @@
             <li class="list contaent-cards__list-cards">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
-                    class="cards-information__img"
-                    class="cards-information__img"
-                    src="./images/portfolio7.jpg"
-                    alt="фото"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-7_lg.jpg    1x,
+                        ./images/portfolio/portfolio-7_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-7_md.jpg    1x,
+                        ./images/portfolio/portfolio-7_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-7_mob.jpg    1x,
+                        ./images/portfolio/portfolio-7_mob@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src="./images/portfolio/portfolio-7_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="cards-information__contaent">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -357,14 +551,40 @@
             <li class="list contaent-cards__list-cards">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
-                    class="cards-information__img"
-                    class="cards-information__img"
-                    src="./images/portfolio8.jpg"
-                    alt="фото"
-                    width="370"
-                    height="294"
-                  />
+                   <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-8_lg.jpg    1x,
+                        ./images/portfolio/portfolio-8_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-8_md.jpg    1x,
+                        ./images/portfolio/portfolio-8_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-8_mob.jpg    1x,
+                        ./images/portfolio/portfolio-8_mob@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src="./images/portfolio/portfolio-8_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="cards-information__contaent">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -386,14 +606,40 @@
             <li class="list contaent-cards__list-cards">
               <a class="contaent-cards__link" href="">
                 <div class="cards-information">
-                  <img
-                    class="cards-information__img"
-                    class="cards-information__img"
-                    src="./images/portfolio9.jpg"
-                    alt="фото"
-                    width="370"
-                    height="294"
-                  />
+                 <picture>
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-9_lg.jpg    1x,
+                        ./images/portfolio/portfolio-9_lg@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-9_md.jpg    1x,
+                        ./images/portfolio/portfolio-9_md@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-9_mob.jpg    1x,
+                        ./images/portfolio/portfolio-9_mob@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="cards-information__img"
+                      src="./images/portfolio/portfolio-9_mob.jpg"
+                      alt="фото"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="cards-information__contaent">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
