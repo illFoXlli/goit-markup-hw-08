@@ -25,10 +25,10 @@
         display: none;
     }
 &.is-open {
-    // position:absolute;
-    // top:0;
-    // left: 0;
-    // transform: translate(1000%, 0);
+    position:fixed;
+    top:0;
+    right:  0;
+    transform: translate(45%, 0);
     
     
     

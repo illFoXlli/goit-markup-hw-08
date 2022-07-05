@@ -467,6 +467,13 @@ body.no-scroll {
   display: none;
 }
 
+.header__menu-button.is-open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate(45%, 0);
+}
+
 .header__menu-button.is-open .header__icon-close {
   display: block;
   z-index: 100;
